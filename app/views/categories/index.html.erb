@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Categories</h1>
+   <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+<div id="categories">
+  <% @categories.each do |category| %>
+   <a href = "/categories/<%= category.id %>/fundings" >
+    <%= render category %>
+    <%# <p>
+      <%= link_to "Show this category", category %>
+    <%# </p> %> %>
+  <% end %>
+    </a>
+</div>
+
+<%= link_to "New category", new_category_path %>

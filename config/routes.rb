@@ -1,10 +1,20 @@
 Rails.application.routes.draw do
+  # get 'users/index'
+  # get 'users/new'
   devise_for :users
-  root 'users#index'
-  get 'users/show'
-  get 'users/new'
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  unauthenticated :user do
+    root to: "users#index"
+  end
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  authenticated :user do
+    root to: "categories#index", as: :authenticated_root
+  end
+  resources :categories do
+    resources :fundings
+  end
+
+  devise_scope  :user do
+    get 'users/sign_out' => 'devise/sessions#destroy'
+  end
+  
 end
