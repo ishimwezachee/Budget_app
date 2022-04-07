@@ -1,45 +1,45 @@
-require "test_helper"
+require 'test_helper'
 
 class FundingsControllerTest < ActionDispatch::IntegrationTest
   setup do
     @funding = fundings(:one)
   end
 
-  test "should get index" do
+  test 'should get index' do
     get fundings_url
     assert_response :success
   end
 
-  test "should get new" do
+  test 'should get new' do
     get new_funding_url
     assert_response :success
   end
 
-  test "should create funding" do
-    assert_difference("Funding.count") do
+  test 'should create funding' do
+    assert_difference('Funding.count') do
       post fundings_url, params: { funding: { amount: @funding.amount, name: @funding.name } }
     end
 
     assert_redirected_to funding_url(Funding.last)
   end
 
-  test "should show funding" do
+  test 'should show funding' do
     get funding_url(@funding)
     assert_response :success
   end
 
-  test "should get edit" do
+  test 'should get edit' do
     get edit_funding_url(@funding)
     assert_response :success
   end
 
-  test "should update funding" do
+  test 'should update funding' do
     patch funding_url(@funding), params: { funding: { amount: @funding.amount, name: @funding.name } }
     assert_redirected_to funding_url(@funding)
   end
 
-  test "should destroy funding" do
-    assert_difference("Funding.count", -1) do
+  test 'should destroy funding' do
+    assert_difference('Funding.count', -1) do
       delete funding_url(@funding)
     end
 

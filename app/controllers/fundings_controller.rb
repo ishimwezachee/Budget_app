@@ -1,5 +1,5 @@
 class FundingsController < ApplicationController
-  before_action :set_funding, only: %i[ show edit update destroy ]
+  before_action :set_funding, only: %i[show edit update destroy]
 
   # GET /fundings or /fundings.json
   def index
@@ -9,8 +9,7 @@ class FundingsController < ApplicationController
   end
 
   # GET /fundings/1 or /fundings/1.json
-  def show
-  end
+  def show; end
 
   # GET /fundings/new
   def new
@@ -21,11 +20,9 @@ class FundingsController < ApplicationController
   end
 
   # GET /fundings/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /fundings or /fundings.json
-
 
   def create
     @funding = Funding.new(funding_params)
@@ -33,7 +30,9 @@ class FundingsController < ApplicationController
     @funding.category_id = Category.find_by_id(params[:category_id]).id
     respond_to do |format|
       if @funding.save
-        format.html { redirect_to category_fundings_path(@funding.category_id), notice: "Funding was successfully created." }
+        format.html do
+          redirect_to category_fundings_path(@funding.category_id), notice: 'Funding was successfully created.'
+        end
         format.json { render :show, status: :created, location: @funding }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -42,31 +41,14 @@ class FundingsController < ApplicationController
     end
   end
 
-
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_funding
-      @funding = Funding.find(params[:id])
-    end
 
-    def funding_params
-      params.require(:funding).permit(:user_id, :name, :category_id, :amount)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_funding
+    @funding = Funding.find(params[:id])
+  end
+
+  def funding_params
+    params.require(:funding).permit(:user_id, :name, :category_id, :amount)
+  end
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
