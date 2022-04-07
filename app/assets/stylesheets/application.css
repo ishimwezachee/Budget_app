@@ -12,3 +12,38 @@ img.home_img {
 .btn1{
     margin-bottom: 2rem;
 }
+
+.parent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#user_email,
+#user_name,
+#user_password,
+#user_password_confirmation{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 7px;
+    outline: none;
+    height: 2rem;
+    margin:10px 0;
+}
+
+.signup_nav,.signin_nav {
+    background-color: #0D6EFD;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 12px;
+}
+
+input.btn.btn-success.btn1 {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.parent>a{
+    text-decoration: none;
+}
