@@ -5,6 +5,7 @@ class FundingsController < ApplicationController
   def index
     @category = Category.find(params[:category_id])
     @fundings = @category.fundings.order(created_at: :desc)
+    @total_amount = @fundings.sum(:amount)
   end
 
   # GET /fundings/1 or /fundings/1.json

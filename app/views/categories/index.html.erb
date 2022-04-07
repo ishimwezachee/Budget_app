@@ -6,9 +6,7 @@
   <% @categories.each do |category| %>
    <a href = "/categories/<%= category.id %>/fundings" >
     <%= render category %>
-    <%# <p>
-      <%= link_to "Show this category", category %>
-    <%# </p> %> %>
+    <p>userName: <%=@user.name %></p>
   <% end %>
     </a>
 </div>

@@ -1,7 +1,11 @@
 <p style="color: green"><%= notice %></p>
-
+<%= link_to "Back to categories", categories_path, class: "btn btn-primary" %>
 <h1>Fundings</h1>
+<div class="category-name">
+<p> Category Icon:<%= @category.icon%> Category Name: <%= @category.name%> </p>
+</div>
 
+<p>Total amount: <%= @total_amount %> </p>
 <div id="fundings">
   <% @fundings.each do |funding| %>
     <%= render funding %>
