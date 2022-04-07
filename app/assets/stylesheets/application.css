@@ -24,7 +24,9 @@ img.home_img {
 #user_password,
 #user_password_confirmation,
 #category_name,
-#category_icon
+#category_icon,
+#funding_name,
+#funding_amount
 {
     width: 100%;
     border: 1px solid black;
@@ -47,7 +49,7 @@ input.btn.btn-success.btn1 {
     margin-top: 10px;
 }
 
-.btn.btn-success.btn_b{
+.btn.btn-warning.btn_b{
 margin-top: 2rem;
 border-radius: 15px;
 }
@@ -89,7 +91,7 @@ input[type="submit"] {
     border-radius: 15px;
 }
 
-.category_list {
+.category_list,.funding_list {
     display: flex;
     border: 1px solid white;
     margin: 10px 2px;
@@ -105,10 +107,17 @@ input[type="submit"] {
 
 }
 
+.funding_list{
+    justify-content: space-between;
+}
+
 .name_list{
     display: flex;
     align-items: center;
+}
 
+.list1{
+    margin-right: 10rem;
 }
 
 .list{
@@ -117,4 +126,30 @@ input[type="submit"] {
 
 .category_link{
     text-decoration: none;
+}
+
+.arrow{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    margin-right: 7rem;
+}
+
+.funding_nav{
+    display: flex;
+    align-items: center;
+    background-color: #0D6EFD;
+    color: white;
+}
+
+.category-name{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+
+.category-name p{
+    margin-bottom: 1px;
+    font-weight: 700;
 }
