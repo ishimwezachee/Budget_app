@@ -1,22 +1,22 @@
 img.home_img {
-    width: 100%;
-    height: 18rem;
+  width: 100%;
+  height: 18rem;
 }
 
 .buttons {
-    display: flex;
-    flex-direction: column;
-    margin: 4rem 4px;
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 4px;
 }
 
-.btn1{
-    margin-bottom: 2rem;
+.btn1 {
+  margin-bottom: 2rem;
 }
 
-.parent{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #user_email,
@@ -26,130 +26,129 @@ img.home_img {
 #category_name,
 #category_icon,
 #funding_name,
-#funding_amount
-{
-    width: 100%;
-    border: 1px solid black;
-    border-radius: 7px;
-    outline: none;
-    height: 2rem;
-    margin:10px 0;
+#funding_amount {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 7px;
+  outline: none;
+  height: 2rem;
+  margin: 10px 0;
 }
 
-.signup_nav,.signin_nav,.forget_nav {
-    background-color: #0D6EFD;
-    width: 100%;
-    text-align: center;
-    color: white;
-    padding: 12px;
+.signup_nav,
+.signin_nav,
+.forget_nav {
+  background-color: #0d6efd;
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 12px;
 }
 
 input.btn.btn-success.btn1 {
-    width: 100%;
-    margin-top: 10px;
+  width: 100%;
+  margin-top: 10px;
 }
 
-.btn.btn-warning.btn_b{
-margin-top: 2rem;
-border-radius: 15px;
-}
-.parent>a{
-    text-decoration: none;
+.btn.btn-warning.btn_b {
+  margin-top: 2rem;
+  border-radius: 15px;
 }
 
-.category_nav{
-    background-color: #0D6EFD;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-   
+.parent > a {
+  text-decoration: none;
+}
 
+.category_nav {
+  background-color: #0d6efd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
 h1 {
-    padding: 14px;
+  padding: 14px;
 }
 
-.logout_cat{
+.logout_cat {
   color: white;
   text-decoration: none;
   margin-left: 4rem;
 }
 
 a.btn.btn-success.btn2 {
-    width: 90%;
-    margin: 20px 19px;
+  width: 90%;
+  margin: 20px 19px;
 }
 
 input[type="submit"] {
-    width: 100%;
-    background-color: #198754;
-    border: 1px solid white;
-    padding: 5px;
-    color: white;
-    border-radius: 15px;
+  width: 100%;
+  background-color: #198754;
+  border: 1px solid white;
+  padding: 5px;
+  color: white;
+  border-radius: 15px;
 }
 
-.category_list,.funding_list {
-    display: flex;
-    border: 1px solid white;
-    margin: 10px 2px;
-    color: rgb(67, 64, 64);
-    background-color: white;
-    justify-content: space-around;
-    padding: 10px;
-    border-radius: 8px;
-    align-items: center;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    font-family: sans-serif;
-
+.category_list,
+.funding_list {
+  display: flex;
+  border: 1px solid white;
+  margin: 10px 2px;
+  color: rgb(67, 64, 64);
+  background-color: white;
+  justify-content: space-around;
+  padding: 10px;
+  border-radius: 8px;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  font-family: sans-serif;
 }
 
-.funding_list{
-    justify-content: space-between;
+.funding_list {
+  justify-content: space-between;
 }
 
-.name_list{
-    display: flex;
-    align-items: center;
+.name_list {
+  display: flex;
+  align-items: center;
 }
 
-.list1{
-    margin-right: 10rem;
+.list1 {
+  margin-right: 10rem;
 }
 
-.list{
-    margin-right: 20px;
+.list {
+  margin-right: 20px;
 }
 
-.category_link{
-    text-decoration: none;
+.category_link {
+  text-decoration: none;
 }
 
-.arrow{
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-    margin-right: 7rem;
+.arrow {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  margin-right: 7rem;
 }
 
-.funding_nav{
-    display: flex;
-    align-items: center;
-    background-color: #0D6EFD;
-    color: white;
+.funding_nav {
+  display: flex;
+  align-items: center;
+  background-color: #0d6efd;
+  color: white;
 }
 
-.category-name{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
+.category-name {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
-
-.category-name p{
-    margin-bottom: 1px;
-    font-weight: 700;
+.category-name p {
+  margin-bottom: 1px;
+  font-weight: 700;
 }
