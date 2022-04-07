@@ -1,13 +1,12 @@
-<div id="<%= dom_id category %>">
-  <p>
-    <strong>Name:</strong>
+<div id="<%= dom_id category %>" class="name_list">
+  <p class="list">
     <%= category.name %>
   </p>
 
-  <p>
-    <strong>Icon:</strong>
+  <p class="list">
     <%= category.icon %>
   </p>
-  <small>Total Amount: <%= category.total_funds %> $</small>
-
+  <p class="list">
+   <%= category.total_funds %> $
+   </p>
 </div>

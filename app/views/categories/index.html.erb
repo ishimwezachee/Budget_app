@@ -1,14 +1,18 @@
 <p style="color: green"><%= notice %></p>
 
+<div class="category_nav">
 <h1>Categories</h1>
-   <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+ <%= link_to "Logout", destroy_user_session_path, method: :delete, class:'logout_cat' %>
+</div>
 <div id="categories">
   <% @categories.each do |category| %>
-   <a href = "/categories/<%= category.id %>/fundings" >
+   <a class="category_link" href = "/categories/<%= category.id %>/fundings" >
+   <div class="category_list">
+   <p><%=@user.name %></p>
     <%= render category %>
-    <p>userName: <%=@user.name %></p>
+    </div>
   <% end %>
     </a>
 </div>
 
-<%= link_to "New category", new_category_path %>
+<%= link_to "New category", new_category_path,class: "btn btn-success btn2" %>
