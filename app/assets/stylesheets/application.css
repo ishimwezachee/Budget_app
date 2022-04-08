@@ -80,6 +80,7 @@ a.btn.btn-success.btn2 {
   width: 90%;
   margin: 20px 19px;
   background-color: #60b523 !important;
+  border: 2px solid white;
 }
 
 .btn-success {
@@ -87,16 +88,25 @@ a.btn.btn-success.btn2 {
   background-color: #60b523 !important;
 }
 
+
+
 input[type="submit"] {
   width: 100%;
   border: 1px solid white;
   padding: 5px;
   color: white;
-  border-radius: 10px;
   background-color: #60b523 !important;
-  margin:10px;
   padding: 7px;
 }
+
+.create_category,
+.create_funding,
+.button_div{
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #60b523;
+}
+
 
 .category_list,
 .funding_list {
@@ -178,3 +188,10 @@ input[type="submit"] {
   align-items: center;
   grid-template-columns: 10% 80%;
 }
+
+
+
+
+/* .border{
+  border: 1px solid yellow;
+} */
