@@ -13,9 +13,10 @@ img.home_img {
   margin-bottom: 2rem;
 }
 
-.parent form{
+.parent form {
   width: 70%;
 }
+
 .parent {
   display: flex;
   flex-direction: column;
@@ -53,7 +54,6 @@ input.btn.btn-success.btn1 {
   margin-top: 10px;
 }
 
-
 .parent > a {
   text-decoration: none;
 }
@@ -80,10 +80,9 @@ a.btn.btn-success.btn2 {
   width: 90%;
   margin: 20px 19px;
   background-color: #60b523 !important;
-
 }
 
-.btn-success{
+.btn-success {
   margin: 20px 0;
   background-color: #60b523 !important;
 }
@@ -139,7 +138,6 @@ input[type="submit"] {
   color: white;
 }
 
-
 .category-name p {
   font-weight: 700;
 }
@@ -148,32 +146,32 @@ input[type="submit"] {
   width: 50%;
 }
 
-.fund_img{
+.fund_img {
   width: 100%;
   height: 10rem;
 }
 
-
-.list{
+.list {
   width: 30%;
 }
 
-.name_list{
+.name_list {
   display: flex;
   justify-content: space-between;
 }
 
-.user_na{
+.user_na {
   margin: 17px;
 }
 
-.signup_nav.signup_nav1,.signin_nav1 {
+.signup_nav.signup_nav1,
+.signin_nav1 {
   display: grid;
   align-items: center;
   grid-template-columns: 10% 80%;
 }
 
-.nav_fund{
+.nav_fund {
   display: grid;
   align-items: center;
   grid-template-columns: 10% 80%;
