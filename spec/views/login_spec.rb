@@ -12,10 +12,10 @@ RSpec.feature 'Log in', type: :feature do
   end
 
   it 'Display Login' do
-        expect(page).to have_content 'Log in'
-      end
+    expect(page).to have_content 'Log in'
+  end
 
- it 'Submit form with correct credintials' do
+  it 'Submit form with correct credintials' do
     @user = User.create(name: 'ALINE', email: 'aline@gmail.com', password: 'password')
     within 'form' do
       fill_in 'Email', with: @user.email
@@ -25,4 +25,3 @@ RSpec.feature 'Log in', type: :feature do
     expect(page).to have_current_path('/')
   end
 end
-

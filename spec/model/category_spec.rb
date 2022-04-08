@@ -26,4 +26,3 @@ RSpec.describe Category, type: :model do
     expect(subject).to be_instance_of Category
   end
 end
-  
