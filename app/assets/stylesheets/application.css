@@ -91,7 +91,6 @@ a.btn.btn-success.btn2 {
 input[type="submit"] {
   width: 100%;
   border: 1px solid white;
-  padding: 5px;
   color: white;
   background-color: #60b523 !important;
   padding: 7px;
@@ -185,10 +184,3 @@ input[type="submit"] {
   align-items: center;
   grid-template-columns: 10% 80%;
 }
-
-
-
-
-/* .border{
-  border: 1px solid yellow;
-} */
