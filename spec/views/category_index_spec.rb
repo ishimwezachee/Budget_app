@@ -4,10 +4,7 @@ RSpec.describe 'Category', type: :feature do
   describe 'index page' do
     before(:each) do
       visit user_session_path
-      @danny = User.create!(name: 'zachee',
-                            email: 'zachee@gmail.com',
-                            password: '123456',
-                            password_confirmation: '123456')
+      @danny = User.create!(name: 'zachee', email: 'zachee@gmail.com', password: '123456', password_confirmation: '123456')
 
       within('#new_user') do
         fill_in 'Email', with: 'zachee@gmail.com'

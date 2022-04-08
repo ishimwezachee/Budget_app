@@ -1,13 +1,10 @@
-<p style="color: green"><%= notice %></p>
 <div class="funding_nav">
 <%= link_to "⇐", categories_path, class: "arrow" %>
 <h1>Fundings</h1>
 </div>
 <div class="category-name">
+<p> <%= image_tag example_img(@category), class: "fund_img" %></p>
 <p>category: <%= @category.name%> </p>
-<p> 
- Icon: <%= @category.icon%>
-</p>
 <p>Total amount: <%= @total_amount %>$ </p>
 </div>
 

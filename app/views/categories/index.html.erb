@@ -1,5 +1,3 @@
-<p style="color: green"><%= notice %></p>
-
 <div class="category_nav">
 <h1>Categories</h1>
  <%= link_to "Logout", destroy_user_session_path, method: :delete, class:'logout_cat' %>
@@ -8,7 +6,7 @@
   <% @categories.each do |category| %>
    <a class="category_link" href = "/categories/<%= category.id %>/fundings" >
    <div class="category_list">
-   <p><%=@user.name %></p>
+   <p class="user_na"><%=@user.name %></p>
     <%= render category %>
     </div>
   <% end %>

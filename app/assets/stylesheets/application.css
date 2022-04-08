@@ -13,6 +13,9 @@ img.home_img {
   margin-bottom: 2rem;
 }
 
+.parent form{
+  width: 70%;
+}
 .parent {
   display: flex;
   flex-direction: column;
@@ -28,8 +31,8 @@ img.home_img {
 #funding_name,
 #funding_amount {
   width: 100%;
-  border: 1px solid black;
-  border-radius: 7px;
+  border: none;
+  border-bottom: 1px solid rgb(143, 139, 139);
   outline: none;
   height: 2rem;
   margin: 10px 0;
@@ -50,10 +53,6 @@ input.btn.btn-success.btn1 {
   margin-top: 10px;
 }
 
-.btn.btn-warning.btn_b {
-  margin-top: 2rem;
-  border-radius: 15px;
-}
 
 .parent > a {
   text-decoration: none;
@@ -80,15 +79,22 @@ h1 {
 a.btn.btn-success.btn2 {
   width: 90%;
   margin: 20px 19px;
+  background-color: #60b523 !important;
+
+}
+
+.btn-success{
+  margin: 20px 0;
+  background-color: #60b523 !important;
 }
 
 input[type="submit"] {
   width: 100%;
-  background-color: #198754;
   border: 1px solid white;
   padding: 5px;
   color: white;
   border-radius: 15px;
+  background-color: #60b523 !important;
 }
 
 .category_list,
@@ -99,7 +105,7 @@ input[type="submit"] {
   color: rgb(67, 64, 64);
   background-color: white;
   justify-content: space-around;
-  padding: 10px;
+  padding: 20px;
   border-radius: 8px;
   align-items: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -111,17 +117,8 @@ input[type="submit"] {
   justify-content: space-between;
 }
 
-.name_list {
-  display: flex;
-  align-items: center;
-}
-
 .list1 {
   margin-right: 10rem;
-}
-
-.list {
-  margin-right: 20px;
 }
 
 .category_link {
@@ -142,13 +139,42 @@ input[type="submit"] {
   color: white;
 }
 
-.category-name {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
 
 .category-name p {
-  margin-bottom: 1px;
   font-weight: 700;
+}
+
+.icon-img {
+  width: 50%;
+}
+
+.fund_img{
+  width: 100%;
+  height: 10rem;
+}
+
+
+.list{
+  width: 30%;
+}
+
+.name_list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.user_na{
+  margin: 17px;
+}
+
+.signup_nav.signup_nav1,.signin_nav1 {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 10% 80%;
+}
+
+.nav_fund{
+  display: grid;
+  align-items: center;
+  grid-template-columns: 10% 80%;
 }
