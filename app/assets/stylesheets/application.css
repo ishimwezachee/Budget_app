@@ -92,8 +92,10 @@ input[type="submit"] {
   border: 1px solid white;
   padding: 5px;
   color: white;
-  border-radius: 15px;
+  border-radius: 10px;
   background-color: #60b523 !important;
+  margin:10px;
+  padding: 7px;
 }
 
 .category_list,

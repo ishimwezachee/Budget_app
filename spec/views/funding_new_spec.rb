@@ -15,26 +15,24 @@ RSpec.describe 'group', type: :feature do
       expect(page).to have_content('Categories')
       click_link 'zac'
       expect(page).to have_current_path category_fundings_path(category.id)
+      click_link "New funding"
     end
 
-    it 'Fund page have the right content New funding' do
+    it 'Add new Funding page have the right content' do
       expect(page).to have_content('New funding')
     end
 
     it 'Funding page have the right arrow' do
-        expect(page).to have_content('⇐')
-    end
-
-    it 'Funding page have the right Funding' do
-        expect(page).to have_content('Fundings')
-    end
-
-    it 'Funding page have the right Funding' do
-      expect(page).to have_content('fund1')
+      expect(page).to have_content('⇐')
   end
 
-    it 'Funding page have the right Funding' do
-      expect(page).to have_content('20$')
-  end
+    it 'Add new Funding page has the right fields' do
+      expect(page).to have_field('funding[name]')
+    end
+
+    it 'Add new Funding page has the right fields' do
+      expect(page).to have_field('funding[amount]')
+    end
+    
   end
 end
