@@ -88,8 +88,6 @@ a.btn.btn-success.btn2 {
   background-color: #60b523 !important;
 }
 
-
-
 input[type="submit"] {
   width: 100%;
   border: 1px solid white;
@@ -101,12 +99,11 @@ input[type="submit"] {
 
 .create_category,
 .create_funding,
-.button_div{
+.button_div {
   margin-top: 20px;
   padding: 10px;
   background-color: #60b523;
 }
-
 
 .category_list,
 .funding_list {
