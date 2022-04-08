@@ -1,12 +1,8 @@
 <div class="parent">
-<div class="signin_nav">
+<div class="signin_nav nav_fund">
+<%= link_to "⇐", category_fundings_path, class: "arrow" %>
 <h1>New funding</h1>
 </div>
 <%= render "form", funding: @funding %>
 
-<br>
-
-<div>
-  <%= link_to "Back to fundings", new_category_funding_path,class: "btn btn-warning btn_b" %>
-</div>
 </div>

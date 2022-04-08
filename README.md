@@ -1,24 +1,61 @@
-# README
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Budget app
 
-Things you may want to cover:
+> A mobile web application where users can manage their budget: they have a list of transactions associated with a category, so that they can see how much money they spent and on what.
 
-* Ruby version
+## Built With
 
-* System dependencies
+- HTML & CSS
+- JavaScript
+- Ruby on Rails
+- Rubocop
+- Rspec
+- OOP
 
-* Configuration
+## Demo
 
-* Database creation
+[Visit demo page]()
 
-* Database initialization
 
-* How to run the test suite
+## Getting Started
 
-* Services (job queues, cache servers, search engines, etc.)
+To get a local copy up and running follow these simple example steps.
 
-* Deployment instructions
+- copy this link `https://github.com/ishimwezachee/Budget_app.git`.
+- get the directory that you want to clone the repository.
+- open the command prompt in this directory.
+- write `git clone https://github.com/ishimwezachee/Budget_app.git`.
+- go to the repository folder in your command prompt.
+- run `bundle install`.
+- run `npm install`
+- create database in your postgre called `budget_app_development`
+- run `rails db:migrate`
+- To run the test run `rspec` in your command prompt.
+- To run the rails server run  `rails s` in your command prompt.
 
-* ...
+## Author
+
+👤 **Zachee Ishimwe**
+
+- GitHub: [@zacheeIshimwe](https://github.com/ishimwezachee)
+- LinkedIn: [@zacheeIshimwe](https://www.linkedin.com/in/zachee-ishimwe-ab952a119/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Microverse
+- [Gregoire Vella](https://www.behance.net/gregoirevella) on Behance the author of the [original design](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=)
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
