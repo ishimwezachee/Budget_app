@@ -15,8 +15,8 @@
 
 ## Demo
 
-[Visit demo page]()
-
+[Visit demo page](https://railsbudgetapp.herokuapp.com/)
+[Video]()
 
 ## Getting Started
 
