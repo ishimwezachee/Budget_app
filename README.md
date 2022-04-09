@@ -16,6 +16,7 @@
 ## Demo
 
 [Visit demo page](https://railsbudgetapp.herokuapp.com/)
+
 [Video](https://www.loom.com/share/89db2d0a7cf44de9859fdc094e5fb169)
 
 ## Getting Started
