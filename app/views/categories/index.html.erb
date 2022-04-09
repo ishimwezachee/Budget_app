@@ -1,0 +1,18 @@
+<div class="category_nav">
+<h1>Categories</h1>
+ <%= link_to "Logout", destroy_user_session_path, method: :delete, class:'logout_cat' %>
+</div>
+<div id="categories">
+  <% @categories.each do |category| %>
+   <a class="category_link" href = "/categories/<%= category.id %>/fundings" >
+   <div class="category_list">
+   <p class="user_na"><%=@user.name %></p>
+    <%= render category %>
+    </div>
+  <% end %>
+    </a>
+</div>
+
+<div class = "button_div">
+<%= link_to "New category", new_category_path,class: "btn btn-success btn2" %>
+</div>

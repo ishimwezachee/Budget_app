@@ -1,0 +1,13 @@
+<div id="<%= dom_id category %>" class="name_list">
+  <div class="list">
+    <%= image_tag example_img(category), class: "icon-img" %>
+  </div>
+
+  <div class="list">
+    <%= category.name %>
+  </div>
+
+  <div class="list">
+   Total: <%= category.total_funds %> $
+   </div>
+</div>

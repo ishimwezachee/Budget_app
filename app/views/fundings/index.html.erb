@@ -1,0 +1,20 @@
+<div class="funding_nav">
+<%= link_to "⇐", categories_path, class: "arrow" %>
+<h1>Fundings</h1>
+</div>
+<div class="category-name">
+<p> <%= image_tag example_img(@category), class: "fund_img" %></p>
+<p>category: <%= @category.name%> </p>
+<p>Total amount: <%= @total_amount %>$ </p>
+</div>
+
+<div id="fundings">
+  <% @fundings.each do |funding| %>
+  <div class="funding_list">
+    <%= render funding %>
+    </div>
+  <% end %>
+</div>
+<div class="button_div">
+<%= link_to "New funding", new_category_funding_path(@category.id) ,class: "btn btn-success btn2"%>
+</div>
